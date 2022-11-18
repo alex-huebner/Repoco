@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2043382D2928266C00FFF3E6 /* RepocoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043382C2928266C00FFF3E6 /* RepocoApp.swift */; };
+		2043382F2928266C00FFF3E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043382E2928266C00FFF3E6 /* ContentView.swift */; };
+		204338312928267000FFF3E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204338302928267000FFF3E6 /* Assets.xcassets */; };
+		204338342928267000FFF3E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204338332928267000FFF3E6 /* Preview Assets.xcassets */; };
+		2043383E2928267000FFF3E6 /* RepocoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043383D2928267000FFF3E6 /* RepocoTests.swift */; };
+		204338482928267000FFF3E6 /* RepocoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204338472928267000FFF3E6 /* RepocoUITests.swift */; };
+		2043384A2928267000FFF3E6 /* RepocoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204338492928267000FFF3E6 /* RepocoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2043383A2928267000FFF3E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 204338212928266C00FFF3E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 204338282928266C00FFF3E6;
+			remoteInfo = Repoco;
+		};
+		204338442928267000FFF3E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 204338212928266C00FFF3E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 204338282928266C00FFF3E6;
+			remoteInfo = Repoco;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		204338292928266C00FFF3E6 /* Repoco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repoco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2043382C2928266C00FFF3E6 /* RepocoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepocoApp.swift; sourceTree = "<group>"; };
+		2043382E2928266C00FFF3E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		204338302928267000FFF3E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		204338332928267000FFF3E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		204338392928267000FFF3E6 /* RepocoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepocoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2043383D2928267000FFF3E6 /* RepocoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepocoTests.swift; sourceTree = "<group>"; };
+		204338432928267000FFF3E6 /* RepocoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepocoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		204338472928267000FFF3E6 /* RepocoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepocoUITests.swift; sourceTree = "<group>"; };
+		204338492928267000FFF3E6 /* RepocoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepocoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		204338262928266C00FFF3E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204338362928267000FFF3E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204338402928267000FFF3E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		204338202928266C00FFF3E6 = {
+			isa = PBXGroup;
+			children = (
+				2043382B2928266C00FFF3E6 /* Repoco */,
+				2043383C2928267000FFF3E6 /* RepocoTests */,
+				204338462928267000FFF3E6 /* RepocoUITests */,
+				2043382A2928266C00FFF3E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2043382A2928266C00FFF3E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				204338292928266C00FFF3E6 /* Repoco.app */,
+				204338392928267000FFF3E6 /* RepocoTests.xctest */,
+				204338432928267000FFF3E6 /* RepocoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2043382B2928266C00FFF3E6 /* Repoco */ = {
+			isa = PBXGroup;
+			children = (
+				2043382C2928266C00FFF3E6 /* RepocoApp.swift */,
+				2043382E2928266C00FFF3E6 /* ContentView.swift */,
+				204338302928267000FFF3E6 /* Assets.xcassets */,
+				204338322928267000FFF3E6 /* Preview Content */,
+			);
+			path = Repoco;
+			sourceTree = "<group>";
+		};
+		204338322928267000FFF3E6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				204338332928267000FFF3E6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2043383C2928267000FFF3E6 /* RepocoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2043383D2928267000FFF3E6 /* RepocoTests.swift */,
+			);
+			path = RepocoTests;
+			sourceTree = "<group>";
+		};
+		204338462928267000FFF3E6 /* RepocoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				204338472928267000FFF3E6 /* RepocoUITests.swift */,
+				204338492928267000FFF3E6 /* RepocoUITestsLaunchTests.swift */,
+			);
+			path = RepocoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		204338282928266C00FFF3E6 /* Repoco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2043384D2928267000FFF3E6 /* Build configuration list for PBXNativeTarget "Repoco" */;
+			buildPhases = (
+				204338252928266C00FFF3E6 /* Sources */,
+				204338262928266C00FFF3E6 /* Frameworks */,
+				204338272928266C00FFF3E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Repoco;
+			productName = Repoco;
+			productReference = 204338292928266C00FFF3E6 /* Repoco.app */;
+			productType = "com.apple.product-type.application";
+		};
+		204338382928267000FFF3E6 /* RepocoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 204338502928267000FFF3E6 /* Build configuration list for PBXNativeTarget "RepocoTests" */;
+			buildPhases = (
+				204338352928267000FFF3E6 /* Sources */,
+				204338362928267000FFF3E6 /* Frameworks */,
+				204338372928267000FFF3E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2043383B2928267000FFF3E6 /* PBXTargetDependency */,
+			);
+			name = RepocoTests;
+			productName = RepocoTests;
+			productReference = 204338392928267000FFF3E6 /* RepocoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		204338422928267000FFF3E6 /* RepocoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 204338532928267000FFF3E6 /* Build configuration list for PBXNativeTarget "RepocoUITests" */;
+			buildPhases = (
+				2043383F2928267000FFF3E6 /* Sources */,
+				204338402928267000FFF3E6 /* Frameworks */,
+				204338412928267000FFF3E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				204338452928267000FFF3E6 /* PBXTargetDependency */,
+			);
+			name = RepocoUITests;
+			productName = RepocoUITests;
+			productReference = 204338432928267000FFF3E6 /* RepocoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		204338212928266C00FFF3E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					204338282928266C00FFF3E6 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					204338382928267000FFF3E6 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 204338282928266C00FFF3E6;
+					};
+					204338422928267000FFF3E6 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 204338282928266C00FFF3E6;
+					};
+				};
+			};
+			buildConfigurationList = 204338242928266C00FFF3E6 /* Build configuration list for PBXProject "Repoco" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 204338202928266C00FFF3E6;
+			productRefGroup = 2043382A2928266C00FFF3E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				204338282928266C00FFF3E6 /* Repoco */,
+				204338382928267000FFF3E6 /* RepocoTests */,
+				204338422928267000FFF3E6 /* RepocoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		204338272928266C00FFF3E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204338342928267000FFF3E6 /* Preview Assets.xcassets in Resources */,
+				204338312928267000FFF3E6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204338372928267000FFF3E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204338412928267000FFF3E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		204338252928266C00FFF3E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2043382F2928266C00FFF3E6 /* ContentView.swift in Sources */,
+				2043382D2928266C00FFF3E6 /* RepocoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204338352928267000FFF3E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2043383E2928267000FFF3E6 /* RepocoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2043383F2928267000FFF3E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2043384A2928267000FFF3E6 /* RepocoUITestsLaunchTests.swift in Sources */,
+				204338482928267000FFF3E6 /* RepocoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2043383B2928267000FFF3E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 204338282928266C00FFF3E6 /* Repoco */;
+			targetProxy = 2043383A2928267000FFF3E6 /* PBXContainerItemProxy */;
+		};
+		204338452928267000FFF3E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 204338282928266C00FFF3E6 /* Repoco */;
+			targetProxy = 204338442928267000FFF3E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2043384B2928267000FFF3E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2043384C2928267000FFF3E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2043384E2928267000FFF3E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Repoco/Preview Content\"";
+				DEVELOPMENT_TEAM = 9S8ZNM525F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alexander.huebner.Repoco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2043384F2928267000FFF3E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Repoco/Preview Content\"";
+				DEVELOPMENT_TEAM = 9S8ZNM525F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alexander.huebner.Repoco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		204338512928267000FFF3E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9S8ZNM525F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alexander.huebner.RepocoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Repoco.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Repoco";
+			};
+			name = Debug;
+		};
+		204338522928267000FFF3E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9S8ZNM525F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alexander.huebner.RepocoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Repoco.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Repoco";
+			};
+			name = Release;
+		};
+		204338542928267000FFF3E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9S8ZNM525F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alexander.huebner.RepocoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Repoco;
+			};
+			name = Debug;
+		};
+		204338552928267000FFF3E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9S8ZNM525F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alexander.huebner.RepocoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Repoco;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		204338242928266C00FFF3E6 /* Build configuration list for PBXProject "Repoco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2043384B2928267000FFF3E6 /* Debug */,
+				2043384C2928267000FFF3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2043384D2928267000FFF3E6 /* Build configuration list for PBXNativeTarget "Repoco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2043384E2928267000FFF3E6 /* Debug */,
+				2043384F2928267000FFF3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		204338502928267000FFF3E6 /* Build configuration list for PBXNativeTarget "RepocoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204338512928267000FFF3E6 /* Debug */,
+				204338522928267000FFF3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		204338532928267000FFF3E6 /* Build configuration list for PBXNativeTarget "RepocoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204338542928267000FFF3E6 /* Debug */,
+				204338552928267000FFF3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 204338212928266C00FFF3E6 /* Project object */;
+}
