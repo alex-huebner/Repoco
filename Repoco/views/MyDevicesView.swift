@@ -17,14 +17,7 @@ struct MyDevicesView: View {
                 DeviceBarChart()
                 List {
                     ForEach(measurements.measurements, id: \.id) { measurement in
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(measurement.name)
-                                Text(measurement.deviceType.rawValue).font(.subheadline).foregroundColor(.gray)
-                            }
-                            Spacer()
-                            Text("3.9 Wh")
-                        }
+                        HistoryButtonView(name: "Name", subtitle: "Subtitle", image: "oven")
                     }
                 }
             }
