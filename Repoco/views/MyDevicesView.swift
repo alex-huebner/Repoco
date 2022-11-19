@@ -10,9 +10,11 @@ import SwiftUI
 struct MyDevicesView: View {
     @EnvironmentObject var measurements: MeasurementList
     var body: some View {
-        List {
-            ForEach(measurements.measurements, id: \.id) { measurement in
-                HistoryButtonView(name: dateToString(measurement.date), subtitle: measurement.deviceType.rawValue, image: measurement.deviceType.description)
+        NavigationView {
+            List {
+                ForEach(measurements.measurements, id: \.id) { measurement in
+                    HistoryButtonView(name: dateToString(measurement.date), subtitle: measurement.deviceType.rawValue, image: measurement.deviceType.description)
+                }
             }
         }
     }
