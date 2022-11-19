@@ -10,13 +10,13 @@ import Foundation
 struct Measurement: Identifiable {
     let id: UUID
     var deviceType: DeviceType
-    var name: String
+    var date: Date
     var consumption: Double
     
-    init(deviceType: DeviceType, name: String, consumption: Double) {
+    init(deviceType: DeviceType, date: Date, consumption: Double) {
         self.id = UUID()
         self.deviceType = deviceType
-        self.name = name
+        self.date = date
         self.consumption = consumption
     }
 }

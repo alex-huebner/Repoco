@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     @StateObject var measurements: MeasurementList = MeasurementList(measurements: [
-        Measurement(deviceType: DeviceType.tv, name: "LG TV 5060", consumption: 44.9),
-        Measurement(deviceType: DeviceType.oven, name: "Super Washy", consumption: 77),
-        Measurement(deviceType: DeviceType.hairdryer, name: "Foenohara", consumption: 12)
+        Measurement(deviceType: DeviceType.tv, date: .now, consumption: 44.9),
+        Measurement(deviceType: DeviceType.oven, date: .now, consumption: 77),
+        Measurement(deviceType: DeviceType.hairdryer, date: .now, consumption: 12)
     ])
     
     var body: some View {

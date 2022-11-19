@@ -9,12 +9,12 @@ import SwiftUI
 
 struct MeasureView: View {
     
-    // @EnvironmentObject private var bleSession: BLESession
+    @EnvironmentObject private var bleSession: BLESession
     @EnvironmentObject private var measurements: MeasurementList
     
     var body: some View {
-//        if bleSession.peripheralConnected {
-            NavigationView {
+        NavigationView {
+            if bleSession.peripheralConnected {
                 List {
                     ForEach(BaseDeviceType.allCases, id: \.self) { baseDeviceType in
                         Section(baseDeviceType.rawValue) {
@@ -27,10 +27,10 @@ struct MeasureView: View {
                     }
                 }
                 .navigationTitle("Rebill")
+            } else {
+                Text("Connecting...")
             }
-//        } else {
-//            Text("Connecting...")
-//        }
+        }
     }
 }
 
