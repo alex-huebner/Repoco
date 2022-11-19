@@ -14,6 +14,15 @@
 		2043383E2928267000FFF3E6 /* RepocoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043383D2928267000FFF3E6 /* RepocoTests.swift */; };
 		204338482928267000FFF3E6 /* RepocoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204338472928267000FFF3E6 /* RepocoUITests.swift */; };
 		2043384A2928267000FFF3E6 /* RepocoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204338492928267000FFF3E6 /* RepocoUITestsLaunchTests.swift */; };
+		2043386029284F6600FFF3E6 /* MeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043385F29284F6600FFF3E6 /* MeasureView.swift */; };
+		2043386229284F7800FFF3E6 /* MyDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043386129284F7800FFF3E6 /* MyDevicesView.swift */; };
+		204338652928C07600FFF3E6 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204338642928C07600FFF3E6 /* Measurement.swift */; };
+		204338672928C16800FFF3E6 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204338662928C16800FFF3E6 /* DeviceType.swift */; };
+		2043386B2928E96D00FFF3E6 /* DeviceBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043386A2928E96D00FFF3E6 /* DeviceBarChart.swift */; };
+		2043386D2929052C00FFF3E6 /* DeviceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043386C2929052C00FFF3E6 /* DeviceButtonView.swift */; };
+		2043386F292905CE00FFF3E6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043386E292905CE00FFF3E6 /* DetailView.swift */; };
+		20433871292905FF00FFF3E6 /* BLESession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20433870292905FF00FFF3E6 /* BLESession.swift */; };
+		204338732929088C00FFF3E6 /* HistoryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204338722929088C00FFF3E6 /* HistoryButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		204338432928267000FFF3E6 /* RepocoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepocoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		204338472928267000FFF3E6 /* RepocoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepocoUITests.swift; sourceTree = "<group>"; };
 		204338492928267000FFF3E6 /* RepocoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepocoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2043385F29284F6600FFF3E6 /* MeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureView.swift; sourceTree = "<group>"; };
+		2043386129284F7800FFF3E6 /* MyDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDevicesView.swift; sourceTree = "<group>"; };
+		204338642928C07600FFF3E6 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
+		204338662928C16800FFF3E6 /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		2043386A2928E96D00FFF3E6 /* DeviceBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBarChart.swift; sourceTree = "<group>"; };
+		2043386C2929052C00FFF3E6 /* DeviceButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceButtonView.swift; sourceTree = "<group>"; };
+		2043386E292905CE00FFF3E6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		20433870292905FF00FFF3E6 /* BLESession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLESession.swift; sourceTree = "<group>"; };
+		204338722929088C00FFF3E6 /* HistoryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +112,13 @@
 		2043382B2928266C00FFF3E6 /* Repoco */ = {
 			isa = PBXGroup;
 			children = (
+				204338632928C04600FFF3E6 /* models */,
+				204338562928290500FFF3E6 /* views */,
 				2043382C2928266C00FFF3E6 /* RepocoApp.swift */,
 				2043382E2928266C00FFF3E6 /* ContentView.swift */,
 				204338302928267000FFF3E6 /* Assets.xcassets */,
 				204338322928267000FFF3E6 /* Preview Content */,
+				20433870292905FF00FFF3E6 /* BLESession.swift */,
 			);
 			path = Repoco;
 			sourceTree = "<group>";
@@ -125,6 +146,28 @@
 				204338492928267000FFF3E6 /* RepocoUITestsLaunchTests.swift */,
 			);
 			path = RepocoUITests;
+			sourceTree = "<group>";
+		};
+		204338562928290500FFF3E6 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				2043385F29284F6600FFF3E6 /* MeasureView.swift */,
+				2043386129284F7800FFF3E6 /* MyDevicesView.swift */,
+				2043386A2928E96D00FFF3E6 /* DeviceBarChart.swift */,
+				2043386C2929052C00FFF3E6 /* DeviceButtonView.swift */,
+				204338722929088C00FFF3E6 /* HistoryButtonView.swift */,
+				2043386E292905CE00FFF3E6 /* DetailView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		204338632928C04600FFF3E6 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				204338642928C07600FFF3E6 /* Measurement.swift */,
+				204338662928C16800FFF3E6 /* DeviceType.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +300,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20433871292905FF00FFF3E6 /* BLESession.swift in Sources */,
 				2043382F2928266C00FFF3E6 /* ContentView.swift in Sources */,
+				2043386F292905CE00FFF3E6 /* DetailView.swift in Sources */,
+				2043386B2928E96D00FFF3E6 /* DeviceBarChart.swift in Sources */,
 				2043382D2928266C00FFF3E6 /* RepocoApp.swift in Sources */,
+				2043386029284F6600FFF3E6 /* MeasureView.swift in Sources */,
+				2043386229284F7800FFF3E6 /* MyDevicesView.swift in Sources */,
+				204338672928C16800FFF3E6 /* DeviceType.swift in Sources */,
+				2043386D2929052C00FFF3E6 /* DeviceButtonView.swift in Sources */,
+				204338652928C07600FFF3E6 /* Measurement.swift in Sources */,
+				204338732929088C00FFF3E6 /* HistoryButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = RepocoOrange;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Repoco/Preview Content\"";
@@ -442,7 +494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = RepocoOrange;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Repoco/Preview Content\"";
