@@ -10,26 +10,27 @@ import SwiftUI
 struct MyDevicesView: View {
     @EnvironmentObject var measurements: MeasurementList
     var body: some View {
-        ZStack {
-            Color(UIColor.systemGray6)
-            VStack {
-                Spacer().frame(height: 160)
-                DeviceBarChart()
-                List {
-                    ForEach(measurements.measurements, id: \.id) { measurement in
-                        HistoryButtonView(name: "Name", subtitle: "Subtitle", image: "oven")
-                    }
-                }
+        List {
+            ForEach(measurements.measurements, id: \.id) { measurement in
+                HistoryButtonView(name: dateToString(measurement.date), subtitle: measurement.deviceType.rawValue, image: measurement.deviceType.description)
             }
-        }.ignoresSafeArea()
+        }
+    }
+}
+
+extension MyDevicesView {
+    func dateToString(_ date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
+        return dateFormatter.string(from: date)
     }
 }
 
 struct MyDevicesView_Previews: PreviewProvider {
     @StateObject static var measurements: MeasurementList = MeasurementList(measurements: [
-        Measurement(deviceType: DeviceType.tv, name: "LG TV 5060", consumption: 44.9),
-        Measurement(deviceType: DeviceType.oven, name: "Super Washy", consumption: 77),
-        Measurement(deviceType: DeviceType.hairdryer, name: "Foenohara", consumption: 12)
+        Measurement(deviceType: DeviceType.tv, date: .now, consumption: 44.9),
+        Measurement(deviceType: DeviceType.oven, date: .now, consumption: 77),
+        Measurement(deviceType: DeviceType.hairdryer, date: .now, consumption: 12)
     ])
     static var previews: some View {
         MyDevicesView().environmentObject(measurements)
