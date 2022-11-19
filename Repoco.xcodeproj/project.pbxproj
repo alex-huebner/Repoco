@@ -23,6 +23,7 @@
 		2043386F292905CE00FFF3E6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043386E292905CE00FFF3E6 /* DetailView.swift */; };
 		20433871292905FF00FFF3E6 /* BLESession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20433870292905FF00FFF3E6 /* BLESession.swift */; };
 		204338732929088C00FFF3E6 /* HistoryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204338722929088C00FFF3E6 /* HistoryButtonView.swift */; };
+		204338762929576800FFF3E6 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204338752929576800FFF3E6 /* utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		2043386E292905CE00FFF3E6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		20433870292905FF00FFF3E6 /* BLESession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLESession.swift; sourceTree = "<group>"; };
 		204338722929088C00FFF3E6 /* HistoryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryButtonView.swift; sourceTree = "<group>"; };
+		204338752929576800FFF3E6 /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				204338302928267000FFF3E6 /* Assets.xcassets */,
 				204338322928267000FFF3E6 /* Preview Content */,
 				20433870292905FF00FFF3E6 /* BLESession.swift */,
+				204338752929576800FFF3E6 /* utilities.swift */,
 			);
 			path = Repoco;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				2043386B2928E96D00FFF3E6 /* DeviceBarChart.swift in Sources */,
 				2043382D2928266C00FFF3E6 /* RepocoApp.swift in Sources */,
 				2043386029284F6600FFF3E6 /* MeasureView.swift in Sources */,
+				204338762929576800FFF3E6 /* utilities.swift in Sources */,
 				2043386229284F7800FFF3E6 /* MyDevicesView.swift in Sources */,
 				204338672928C16800FFF3E6 /* DeviceType.swift in Sources */,
 				2043386D2929052C00FFF3E6 /* DeviceButtonView.swift in Sources */,
@@ -465,7 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = RepocoOrange;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Repoco/Preview Content\"";
@@ -495,7 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = RepocoOrange;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Repoco/Preview Content\"";

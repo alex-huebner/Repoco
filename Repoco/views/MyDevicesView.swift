@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct MyDevicesView: View {
+    
     @EnvironmentObject var measurements: MeasurementList
+    
     var body: some View {
         NavigationView {
-            List {
-                ForEach(measurements.measurements, id: \.id) { measurement in
-                    HistoryButtonView(name: dateToString(measurement.date), subtitle: measurement.deviceType.rawValue, image: measurement.deviceType.description)
+            if measurements.measurements.count > 0 {
+                List {
+                    ForEach(measurements.measurements, id: \.id) { measurement in
+                        HistoryButtonView(
+                            name: dateToString(measurement.date),
+                            subtitle: measurement.deviceType.rawValue,
+                            image: measurement.deviceType.description,
+                            measurement: measurement
+                        )
+                    }
                 }
+                .navigationTitle("History")
+            } else {
+                ZStack {
+                    Color(UIColor.systemGray6)
+                    Text("No measurements yet")
+                        .navigationTitle("History")
+                        .foregroundColor(Color.gray)
+                }
+                .ignoresSafeArea()
             }
         }
     }
@@ -28,13 +46,13 @@ extension MyDevicesView {
     }
 }
 
-struct MyDevicesView_Previews: PreviewProvider {
-    @StateObject static var measurements: MeasurementList = MeasurementList(measurements: [
-        Measurement(deviceType: DeviceType.tv, date: .now, consumption: 44.9),
-        Measurement(deviceType: DeviceType.oven, date: .now, consumption: 77),
-        Measurement(deviceType: DeviceType.hairdryer, date: .now, consumption: 12)
-    ])
-    static var previews: some View {
-        MyDevicesView().environmentObject(measurements)
-    }
-}
+//struct MyDevicesView_Previews: PreviewProvider {
+//    @StateObject static var measurements: MeasurementList = MeasurementList(measurements: [
+//        Measurement(deviceType: DeviceType.tv, date: .now, consumption: 44.9),
+//        Measurement(deviceType: DeviceType.oven, date: .now, consumption: 77),
+//        Measurement(deviceType: DeviceType.hairdryer, date: .now, consumption: 12)
+//    ])
+//    static var previews: some View {
+//        MyDevicesView().environmentObject(measurements)
+//    }
+//}

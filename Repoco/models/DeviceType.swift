@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum DeviceType: String, CustomStringConvertible, CaseIterable {
+enum DeviceType: String, CustomStringConvertible, CaseIterable, Codable {
     case washingMachine = "Washing Machine"
     case oven = "Oven"
     case dryer = "Dryer"
@@ -22,25 +22,25 @@ enum DeviceType: String, CustomStringConvertible, CaseIterable {
     var avgConsumption: Int {
         switch self {
             case .washingMachine:
-                return 22
+                return 500
             case .oven:
-                return 22
+                return 500
             case.dryer:
-                return 22
+                return 500
             case .refrigerator:
-                return 22
+                return 500
             case .airConditioner:
-                return 22
+                return 500
             case .microwave:
-                return 22
+                return 500
             case .toaster:
-                return 22
+                return 500
             case .hairdryer:
-                return 22
+                return 500
             case.tv:
-                return 22
+                return 500
             case .generic:
-                return 22
+                return 500
         }
     }
     
@@ -95,8 +95,8 @@ enum DeviceType: String, CustomStringConvertible, CaseIterable {
     }
 }
 
-enum BaseDeviceType: String, CaseIterable {
-    case bigDevices = "Big Devices"
-    case smallDevices = "Small Devices"
-    case other = "Generic Devices"
+enum BaseDeviceType: String, CaseIterable, Codable {
+    case bigDevices = "Large Appliances"
+    case smallDevices = "Small Appliances"
+    case other = "Others"
 }

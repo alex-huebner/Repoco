@@ -7,17 +7,24 @@
 
 import Foundation
 
-struct Measurement: Identifiable {
+struct Measurement: Identifiable, Codable {
     let id: UUID
     var deviceType: DeviceType
     var date: Date
-    var consumption: Double
+    var consumption: Int
     
-    init(deviceType: DeviceType, date: Date, consumption: Double) {
+    var measuredAvg: Int
+    var measuredMax: Int
+    var measuredMin: Int
+    
+    init(deviceType: DeviceType, date: Date, consumption: Int, measuredAvg: Int, measuredMax: Int, measuredMin: Int) {
         self.id = UUID()
         self.deviceType = deviceType
         self.date = date
         self.consumption = consumption
+        self.measuredAvg = measuredAvg
+        self.measuredMax = measuredMax
+        self.measuredMin = measuredMin
     }
 }
 
@@ -28,4 +35,8 @@ class MeasurementList: ObservableObject {
     init(measurements: [Measurement]) {
         self.measurements = measurements
     }
+}
+
+enum CodingKeys: CodingKey {
+    case measurements
 }

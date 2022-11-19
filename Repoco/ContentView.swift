@@ -9,11 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var measurements: MeasurementList = MeasurementList(measurements: [
-        Measurement(deviceType: DeviceType.tv, date: .now, consumption: 44.9),
-        Measurement(deviceType: DeviceType.oven, date: .now, consumption: 77),
-        Measurement(deviceType: DeviceType.hairdryer, date: .now, consumption: 12)
-    ])
+    @StateObject var bleSession = BLESession()
+    @StateObject var measurements: MeasurementList = MeasurementList(measurements: [])
     
     var body: some View {
         TabView {
@@ -23,11 +20,31 @@ struct ContentView: View {
                 }
             MyDevicesView()
                 .tabItem() {
-                    Label("My Devices", systemImage: "laptopcomputer.and.ipad")
+                    Label("History", systemImage: "book")
                 }
         }
-        .background(.opacity(0))
         .environmentObject(measurements)
+        .environmentObject(bleSession)
+        .onAppear(perform: fetchMeasurements)
+    }
+}
+
+extension ContentView {
+    func fetchMeasurements() -> Void {
+        var measurementsEncoded = UserDefaults.standard.string(forKey: "measurements")?.data(using: .utf8)
+        
+        if (measurementsEncoded == nil) {
+            measurements.measurements = []
+            return
+        }
+        
+        let decoder = JSONDecoder()
+        if let measurementsDecoded = try? decoder.decode([Measurement].self, from: measurementsEncoded!) {
+            measurements.measurements = measurementsDecoded
+        } else {
+            measurements.measurements = []
+        }
+        
     }
 }
 

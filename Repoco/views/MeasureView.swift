@@ -20,22 +20,46 @@ struct MeasureView: View {
                         Section(baseDeviceType.rawValue) {
                             ForEach(DeviceType.allCases.filter() { deviceType in
                                 return deviceType.baseDeviceType == baseDeviceType
-                            }, id: \.self) { baseDeviceType in
-                                DeviceButtonView(name: baseDeviceType.rawValue,  image: baseDeviceType.description)
+                            }, id: \.self) { deviceType in
+                                DeviceButtonView(deviceType: deviceType)
                             }
                         }
                     }
                 }
                 .navigationTitle("Rebill")
             } else {
-                Text("Connecting...")
+                ZStack {
+                    Color(UIColor.systemGray6)
+                    VStack {
+                        LoaderView(tintColor: .accentColor, scaleSize: 2.0)
+                            .padding(.bottom, 16)
+                        Text("Connecting ...")
+                    }
+                }
+                .ignoresSafeArea()
             }
         }
     }
 }
 
-struct DevicesView_Previews: PreviewProvider {
-    static var previews: some View {
-        MeasureView()
+struct LoaderView: View {
+    var tintColor: Color = .accentColor
+    var scaleSize: CGFloat = 3.0
+    
+    var body: some View {
+        ProgressView()
+            .scaleEffect(scaleSize, anchor: .center)
+            .progressViewStyle(CircularProgressViewStyle(tint: tintColor))
     }
 }
+
+//struct DevicesView_Previews: PreviewProvider {
+//    @StateObject static var measurements: MeasurementList = MeasurementList(measurements: [
+//        Measurement(deviceType: DeviceType.tv, date: .now, consumption: 44.9),
+//        Measurement(deviceType: DeviceType.oven, date: .now, consumption: 77),
+//        Measurement(deviceType: DeviceType.hairdryer, date: .now, consumption: 12)
+//    ])
+//    static var previews: some View {
+//        MeasureView()
+//    }
+//}

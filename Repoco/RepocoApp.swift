@@ -10,12 +10,9 @@ import SwiftUI
 @main
 struct RepocoApp: App {
     
-    @StateObject var bleSession = BLESession()
-    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(bleSession)
         }
     }
 }

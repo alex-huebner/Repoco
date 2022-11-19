@@ -9,17 +9,17 @@ import SwiftUI
 
 struct DeviceButtonView: View {
     
-    @State var name: String
-    @State var image: String
+    var deviceType: DeviceType
     
     var body: some View {
         NavigationLink {
-            DetailView()
+            DetailView(deviceType: deviceType)
         } label: {
             HStack {
-                Image(systemName: image)
+                Image(systemName: deviceType.description)
                     .font(.largeTitle)
-                Text(name)
+                    .foregroundColor(.accentColor)
+                Text(deviceType.rawValue)
                     .font(.title3)
                     .fontWeight(.semibold)
                     .padding(.leading, 10)
@@ -31,6 +31,6 @@ struct DeviceButtonView: View {
 
 struct DeviceButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        DeviceButtonView(name: "Name", image: "Bild")
+        DeviceButtonView(deviceType: .oven)
     }
 }
